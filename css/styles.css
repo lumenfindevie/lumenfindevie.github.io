@@ -53,7 +53,7 @@ h1 {
     align-items: center;
     gap: 3rem;
     max-width: 1200px;
-    height: 100vh;
+    min-height: 100vh;
     flex-wrap: wrap;
 }
 
@@ -133,13 +133,7 @@ i {
 }
 
 .credit {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1000;
     font-size: 0.75rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
 }
-
