@@ -1,0 +1,128 @@
+@font-face {
+    font-family: playfair;
+    src: url(../assets/fonts/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+
+:root {
+    --text-color: #6c6c6c;
+    --accent-color: #eeb42c;
+    --background-color: #f9f6f1;
+    --icon-color: #558a1b;
+    --icon-color-hover: #6baf23;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2rem;
+    /* Photo en contre-plongée de bougies allumées
+    mike-labrum-fvl4b1gjpbk-unsplash.jpg
+    Photo de <a href="https://unsplash.com/fr/@labrum777?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mike Labrum</a> sur <a href="https://unsplash.com/fr/photos/photo-en-contre-plongee-de-bougies-allumees-fvl4b1gjpbk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    https://unsplash.com/fr/photos/photo-en-contre-plongee-de-bougies-allumees-fvl4b1gjpbk */
+    /* background: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply; */
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1 {
+    font-family: playfair;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+
+
+.colonne {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 500px;
+    font-size: 1.25rem;
+}
+
+.col-gauche {
+
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+
+    img {
+        width: 80%;
+        /* margin-bottom: 2rem; */
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+}
+
+.paragraphe-small {
+    margin-bottom: 0;
+}
+
+
+.media-link {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    
+} 
+
+a, 
+a:visited {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: 800;
+}
+
+.media-link a, 
+.media-link a:visited {
+        color: var(--text-color);
+    }
+
+i {
+    cursor: pointer;
+    transition: all 250ms;
+    color: var(--icon-color);
+
+    &:hover {
+        transform: scale(1.25);
+        color: var(--icon-color-hover);
+    }
+}
+
+.col-droite {
+
+    padding-top: 3rem;
+
+    ul {
+        margin-left: 2rem;
+        width: 80%;
+    }
+
+    .sous-titre {
+        font-size: 1.5em;
+    }
+}
+
